@@ -26,9 +26,7 @@ if(isset($Listo)){
 }
 
 if ($conn->query($sql) === TRUE and $conn->query($sql2) === TRUE){
-    $_SESSION["Registrado"]= 1 ;
-    $_SESSION["Volver"] = 0;
-    header("Location:Index.php");
+    header("Location:Subír_Compra_Bis.php");
     exit;
 } else{
     echo "Error al insetar registro: " . $conn->error;
